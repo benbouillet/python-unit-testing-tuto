@@ -1,0 +1,21 @@
+<keymap version="1" name="macOS copy" parent="Mac OS X 10.5+">
+  <action id="ActivateFavoritesToolWindow">
+    <keyboard-shortcut first-keystroke="meta 5" />
+  </action>
+  <action id="ActivateFindToolWindow" />
+  <action id="ActivateTerminalToolWindow">
+    <keyboard-shortcut first-keystroke="alt f12" />
+    <keyboard-shortcut first-keystroke="meta 3" />
+  </action>
+  <action id="Console.Open">
+    <keyboard-shortcut first-keystroke="meta 4" />
+  </action>
+  <action id="FileChooser.GotoProject" />
+  <action id="FocusEditor">
+    <keyboard-shortcut first-keystroke="meta 2" />
+  </action>
+  <action id="Terminal.SwitchFocusToEditor" />
+  <action id="com.jetbrains.python.console.RunPythonConsoleAction">
+    <keyboard-shortcut first-keystroke="meta 4" />
+  </action>
+</keymap>
