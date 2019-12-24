@@ -4,7 +4,7 @@
     <shortcut-conflicts />
     <editor />
     <notifications>
-      <idea-join enabled="false" />
+      <idea-join enabled="true" />
       <idea-put enabled="false" />
     </notifications>
   </component>
