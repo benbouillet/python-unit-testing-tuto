@@ -1,2 +1,2 @@
-# elegantframeworks
-Code stubs for Elegant Automation Frameworks with Python and Pytest (Udemy)
+# testing-for-datascience
+A small repo to get familiar with testing in datascience
