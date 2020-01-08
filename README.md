@@ -9,6 +9,18 @@ We are on our way to industrialize our product. In order to do so, I have to imp
 > * ensure a code maintenance in a continuous improvement loop
 > * improve our code readability
 
+## Contents
+* [What is software testing ?](https://github.com/dktunited/testing-for-datascience#What is software testing ?]
+* [Unit testing vs. Integration testing](https://github.com/dktunited/testing-for-datascience#Unit testing vs. Integration testing]
+* [Architecture](https://github.com/dktunited/testing-for-datascience#Architecture]
+* [Simple test case](https://github.com/dktunited/testing-for-datascience#Simple test case]
+* [Interpreting the results](https://github.com/dktunited/testing-for-datascience#Interpreting the results]
+* [Configuration](https://github.com/dktunited/testing-for-datascience#Configuration]
+* [Markers](https://github.com/dktunited/testing-for-datascience#Markers]
+* [Advanced commands](https://github.com/dktunited/testing-for-datascience#Advanced commands]
+* [Resources](https://github.com/dktunited/testing-for-datascience#Resources]
+* [See also](https://github.com/dktunited/testing-for-datascience#See also]
+
 ## What is software testing ?
 *Software testing is a system of check-ups to ensure that the output from our code matches with the expected results*
 
@@ -146,7 +158,7 @@ $ python3 -m pytest
 * the `-m` argument allows Python to run with a preloaded module (in this case `pytest`)
 * `pytest` is based on built-in module `unittest`. You might have to `conda install pytest` or `pip install pytest` to install the module
 
-## Typical result
+## Interpreting the results
 
 If you execute the previous command without modifying the repo, you should get the following result :
 ```bash
@@ -271,7 +283,7 @@ tests/test_function.py .                                                        
 =================================== 1 passed, 1 warning in 0.04s ====================================
 ```
 
-#### Markers syntax
+### Markers syntax
 You can use trickier combinations of markers in your command :
 ```bash
 $ python3 -m pytest -m "not feature_engineering"
