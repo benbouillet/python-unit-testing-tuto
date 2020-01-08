@@ -1,0 +1,42 @@
+# History files
+.Rhistory
+.Rapp.history
+
+# Session Data files
+.RData
+
+# User-specific files
+.Ruserdata
+
+# RStudio files
+.Rproj.user/
+
+
+# knitr and R markdown default cache directories
+*_cache/
+/cache/
+
+# R Environment Variables
+.Renviron
+
+### JupyterNotebooks template
+# gitignore template for Jupyter Notebooks
+# website: http://jupyter.org/
+
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# IPython
+profile_default/
+ipython_config.py
+.idea/.gitignore
+.idea/inspectionProfiles/
+.idea/markdown-navigator-enh.xml
+.idea/markdown-navigator.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/testing-for-datascience.iml
+.idea/vcs.xml
+data/
+src/features/__pycache__/
+tests/__pycache__/
