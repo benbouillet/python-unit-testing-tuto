@@ -40,3 +40,11 @@ ipython_config.py
 data/
 src/features/__pycache__/
 tests/__pycache__/
+!/vim_settings.xml
+!/.pytest_cache/
+!/debugger.xml
+!/codestyles/
+!/_mac/laf.xml
+!/editor.xml
+!/colors.scheme.xml
+!/_mac/
