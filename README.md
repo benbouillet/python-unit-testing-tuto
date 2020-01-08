@@ -10,16 +10,16 @@ We are on our way to industrialize our product. In order to do so, I have to imp
 > * improve our code readability
 
 ## Contents
-* [What is software testing ?](https://github.com/dktunited/testing-for-datascience#What is software testing ?]
-* [Unit testing vs. Integration testing](https://github.com/dktunited/testing-for-datascience#Unit testing vs. Integration testing]
-* [Architecture](https://github.com/dktunited/testing-for-datascience#Architecture]
-* [Simple test case](https://github.com/dktunited/testing-for-datascience#Simple test case]
-* [Interpreting the results](https://github.com/dktunited/testing-for-datascience#Interpreting the results]
-* [Configuration](https://github.com/dktunited/testing-for-datascience#Configuration]
-* [Markers](https://github.com/dktunited/testing-for-datascience#Markers]
-* [Advanced commands](https://github.com/dktunited/testing-for-datascience#Advanced commands]
-* [Resources](https://github.com/dktunited/testing-for-datascience#Resources]
-* [See also](https://github.com/dktunited/testing-for-datascience#See also]
+* [What is software testing ?](https://github.com/dktunited/testing-for-datascience#What is software testing ?)
+* [Unit testing vs. Integration testing](https://github.com/dktunited/testing-for-datascience#Unit testing vs. Integration testing)
+* [Architecture](https://github.com/dktunited/testing-for-datascience#Architecture)
+* [Simple test case](https://github.com/dktunited/testing-for-datascience#Simple test case)
+* [Interpreting the results](https://github.com/dktunited/testing-for-datascience#Interpreting the results)
+* [Configuration](https://github.com/dktunited/testing-for-datascience#Configuration)
+* [Markers](https://github.com/dktunited/testing-for-datascience#Markers)
+* [Advanced commands](https://github.com/dktunited/testing-for-datascience#Advanced commands)
+* [Resources](https://github.com/dktunited/testing-for-datascience#Resources)
+* [See also](https://github.com/dktunited/testing-for-datascience#See also)
 
 ## What is software testing ?
 *Software testing is a system of check-ups to ensure that the output from our code matches with the expected results*
