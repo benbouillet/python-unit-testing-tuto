@@ -179,7 +179,7 @@ _____________________________ boundToFailTests.test_returns_asserterror_if_int_i
 ```bash
 rootdir: /Users/ben/PycharmProjects/testing-for-datascience, inifile: pytest.ini
 ```
-This line indicates where the `pytest` suite is executed. ** Be sure that it is the project root !**
+This line indicates where the `pytest` suite is executed. **Be sure that it is the project root !**
 If a configuration file is present, it should appear here (`inifile: pytest.ini`)
 
 ```bash
