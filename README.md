@@ -188,7 +188,7 @@ If a configuration file is present, it should appear here (`inifile: pytest.ini`
 collected 4 items 
 ```
 This indicates that 4 tests has been found.\
-**Important note : `pytest` automatically & recursively search for tests (see "Configuration" section for more information) in subfolders. That is why executing `pytest` from the project root is important**
+**Important note : `pytest` automatically & recursively search for tests (see "Configuration" section for more information) in subfolders. That is why executing `pytest` from the project root is important**\
 Keeping all test in the `tests/` folder is a good practice.
 
 ```bash
@@ -206,6 +206,7 @@ _____________________________ boundToFailTests.test_returns_asserterror_if_int_i
 ...
 ```
 *This section was voluntarily truncated for readability*
+
 All information below `FAILURES` returns information regarding failed test. This section allows the developer to debug the tests one by one.
 
 ## Configuration
@@ -229,8 +230,8 @@ python_files = test_*
 
 ## Markers
 Complete test suite can take some time to execute, and for productivity purposes, a developer might want to run only a limited group of tests.
-Moreover, when a commit is done on a project, the developer might want to test only the impacted portion of the project (*for example : if a feature impacting the Data Collection step in a Data Science project is about to be released, you might want ot run only the tests related to this portion of the pipeline*
-Markers are "tags" for test functions or classes.
+Moreover, when a commit is done on a project, the developer might want to test only the impacted portion of the project (*for example : if a feature impacting the Data Collection step in a Data Science project is about to be released, you might want ot run only the tests related to this portion of the pipeline*)\
+Markers are "tags" for test functions or classes.\
 This allows to categorize tests when executing a test suite.
 
 Markers must be defined in the `pytest.ini` file :
@@ -259,7 +260,7 @@ def test_maxinlist_returns_max():
     assert maxinlist(input_list) == list_max
 ```
 Note that `mark` has to be imported from `pytest` package.
-In the example above, the `maxslopeDetectionTests` class and all subsequent functions are marked with the marker **feature_engineering**
+In the example above, the `maxslopeDetectionTests` class and all subsequent functions are marked with the marker **feature_engineering**.
 
 The main advantage of markers relies in selecting testing while running a test suite :
 ```bash
