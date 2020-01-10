@@ -43,6 +43,7 @@ Adding a tests suite in a project requires :
 * `pytest.ini` file at the project root to configure the tests suite
 * `.py` files inside `tests/` bearing the test functions
 
+
 Typical file structure is the following :
  
 ```
@@ -154,8 +155,9 @@ The debug tool allows us to see that the test experienced an `AssertionError` on
 You can run the test suite from the project root using the following command :
 ```bash
 $ python3 -m pytest
-```
-*Notes :
+```  
+
+Notes :
 * the `-m` argument allows Python to run with a preloaded module (in this case `pytest`)
 * `pytest` is based on built-in module `unittest`. You might have to `conda install pytest` or `pip install pytest` to install the module
 
@@ -185,7 +187,7 @@ If a configuration file is present, it should appear here (`inifile: pytest.ini`
 ```bash
 collected 4 items 
 ```
-This indicates that 4 tests has been found.
+This indicates that 4 tests has been found.\
 **Important note : `pytest` automatically & recursively search for tests (see "Configuration" section for more information) in subfolders. That is why executing `pytest` from the project root is important**
 Keeping all test in the `tests/` folder is a good practice.
 
