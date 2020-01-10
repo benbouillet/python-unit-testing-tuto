@@ -331,5 +331,5 @@ $ python3 -m pytest -q test_function.py
 ## See also
 * [Pytest .html reports](https://pypi.org/project/pytest-html/)
 * [Fixtures](https://docs.pytest.org/en/latest/fixture.html) allows you to reduce code cumbersomeness
-* [Elegant Automation Frameworks with Python and Pytest](https://www.udemy.com/course/elegant-automation-frameworks-with-python-and-pytest/) - Udemy Course
-* [Unit Testing for Data Science in Python](https://www.datacamp.com/courses/unit-testing-for-data-science-in-python) - Datacamp Course
+* [Elegant Automation Frameworks with Python and Pytest](https://www.udemy.com/course/elegant-automation-frameworks-with-python-and-pytest/) - Udemy Course - ~3-4 hours of training
+* [Unit Testing for Data Science in Python](https://www.datacamp.com/courses/unit-testing-for-data-science-in-python) - Datacamp Course - 4-5 hours of training
