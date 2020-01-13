@@ -9,6 +9,19 @@ We are on our way to industrialize our product. In order to do so, I have to imp
 > * ensure a code maintenance in a continuous improvement loop
 > * improve our code readability
 
+## Contents
+* [What is software testing ?](https://github.com/dktunited/testing-for-datascience#what-is-software-testing-)
+* [Unit testing vs. Integration testing](https://github.com/dktunited/testing-for-datascience#unit-testing-vs-integration-testing)
+* [Architecture](https://github.com/dktunited/testing-for-datascience#Architecture)
+* [Simple test case](https://github.com/dktunited/testing-for-datascience#simple-test-case)
+* [Instant Running](https://github.com/dktunited/testing-for-datascience#instant-running)
+* [Interpreting the results](https://github.com/dktunited/testing-for-datascience#interpreting-the-results)
+* [Configuration](https://github.com/dktunited/testing-for-datascience#Configuration)
+* [Markers](https://github.com/dktunited/testing-for-datascience#Markers)
+* [Advanced commands](https://github.com/dktunited/testing-for-datascience#advanced-commands)
+* [Resources](https://github.com/dktunited/testing-for-datascience#Resources)
+* [See also](https://github.com/dktunited/testing-for-datascience#see-also)
+
 ## What is software testing ?
 *Software testing is a system of check-ups to ensure that the output from our code matches with the expected results*
 
@@ -29,6 +42,7 @@ Adding a tests suite in a project requires :
 * a new `tests/` folder at the project root
 * `pytest.ini` file at the project root to configure the tests suite
 * `.py` files inside `tests/` bearing the test functions
+
 
 Typical file structure is the following :
  
@@ -141,12 +155,13 @@ The debug tool allows us to see that the test experienced an `AssertionError` on
 You can run the test suite from the project root using the following command :
 ```bash
 $ python3 -m pytest
-```
-*Notes :
+```  
+
+Notes :
 * the `-m` argument allows Python to run with a preloaded module (in this case `pytest`)
 * `pytest` is based on built-in module `unittest`. You might have to `conda install pytest` or `pip install pytest` to install the module
 
-## Typical result
+## Interpreting the results
 
 If you execute the previous command without modifying the repo, you should get the following result :
 ```bash
@@ -166,14 +181,14 @@ _____________________________ boundToFailTests.test_returns_asserterror_if_int_i
 ```bash
 rootdir: /Users/ben/PycharmProjects/testing-for-datascience, inifile: pytest.ini
 ```
-This line indicates where the `pytest` suite is executed. ** Be sure that it is the project root !**
+This line indicates where the `pytest` suite is executed. **Be sure that it is the project root !**
 If a configuration file is present, it should appear here (`inifile: pytest.ini`)
 
 ```bash
 collected 4 items 
 ```
-This indicates that 4 tests has been found.
-**Important note : `pytest` automatically & recursively search for tests (see "Configuration" section for more information) in subfolders. That is why executing `pytest` from the project root is important**
+This indicates that 4 tests has been found.\
+**Important note : `pytest` automatically & recursively search for tests (see "Configuration" section for more information) in subfolders. That is why executing `pytest` from the project root is important**\
 Keeping all test in the `tests/` folder is a good practice.
 
 ```bash
@@ -191,6 +206,7 @@ _____________________________ boundToFailTests.test_returns_asserterror_if_int_i
 ...
 ```
 *This section was voluntarily truncated for readability*
+
 All information below `FAILURES` returns information regarding failed test. This section allows the developer to debug the tests one by one.
 
 ## Configuration
@@ -214,8 +230,8 @@ python_files = test_*
 
 ## Markers
 Complete test suite can take some time to execute, and for productivity purposes, a developer might want to run only a limited group of tests.
-Moreover, when a commit is done on a project, the developer might want to test only the impacted portion of the project (*for example : if a feature impacting the Data Collection step in a Data Science project is about to be released, you might want ot run only the tests related to this portion of the pipeline*
-Markers are "tags" for test functions or classes.
+Moreover, when a commit is done on a project, the developer might want to test only the impacted portion of the project (*for example : if a feature impacting the Data Collection step in a Data Science project is about to be released, you might want ot run only the tests related to this portion of the pipeline*)\
+Markers are "tags" for test functions or classes.\
 This allows to categorize tests when executing a test suite.
 
 Markers must be defined in the `pytest.ini` file :
@@ -244,7 +260,7 @@ def test_maxinlist_returns_max():
     assert maxinlist(input_list) == list_max
 ```
 Note that `mark` has to be imported from `pytest` package.
-In the example above, the `maxslopeDetectionTests` class and all subsequent functions are marked with the marker **feature_engineering**
+In the example above, the `maxslopeDetectionTests` class and all subsequent functions are marked with the marker **feature_engineering**.
 
 The main advantage of markers relies in selecting testing while running a test suite :
 ```bash
@@ -271,7 +287,7 @@ tests/test_function.py .                                                        
 =================================== 1 passed, 1 warning in 0.04s ====================================
 ```
 
-#### Markers syntax
+### Markers syntax
 You can use trickier combinations of markers in your command :
 ```bash
 $ python3 -m pytest -m "not feature_engineering"
@@ -330,3 +346,5 @@ $ python3 -m pytest -q
 ## See also
 * [Pytest .html reports](https://pypi.org/project/pytest-html/)
 * [Fixtures](https://docs.pytest.org/en/latest/fixture.html) allows you to reduce code cumbersomeness
+* [Elegant Automation Frameworks with Python and Pytest](https://www.udemy.com/course/elegant-automation-frameworks-with-python-and-pytest/) - Udemy Course - ~3-4 hours of training
+* [Unit Testing for Data Science in Python](https://www.datacamp.com/courses/unit-testing-for-data-science-in-python) - Datacamp Course - 4-5 hours of training
