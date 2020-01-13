@@ -305,7 +305,22 @@ $ python3 -m pytest -rs
 
 Try only tests contained in a single file
 ```bash
-$ python3 -m pytest -q test_function.py
+$ python3 -m pytest test_function.py
+```
+
+Test only a certain class in a certain file
+```bash
+$ python3 -m pytest test_function.py::ClassTests
+```
+
+Test only a certain unit test
+```bash
+$ python3 -m pytest test_function.py::ClassTests::test_function
+```
+
+Run pytest quietly (less verbose)
+```bash
+$ python3 -m pytest -q
 ```
 
 ---
