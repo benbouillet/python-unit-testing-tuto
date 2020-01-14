@@ -342,6 +342,7 @@ $ python3 -m pytest -q
 ---
 ## Resources
 * [Pytest Documentation](http://doc.pytest.org/en/latest/)
+* [gutfeeling's Github repo](https://github.com/gutfeeling/univariate-linear-regression)
 
 ## See also
 * [Pytest .html reports](https://pypi.org/project/pytest-html/)
